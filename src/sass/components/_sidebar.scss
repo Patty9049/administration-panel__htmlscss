@@ -1,0 +1,15 @@
+#sidebar {
+  background: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 15%;
+  
+  h1 {
+    font-family: $font-header;
+    font-weight: $font-light;
+    color: $color-light;
+  }
+}
