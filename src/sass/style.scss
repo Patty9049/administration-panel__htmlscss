@@ -1,7 +1,8 @@
-@import "./components/settings";
-@import "./components/global";
+@import "./variables";
+@import "./sections/sections";
+@import "./layout";
+@import "./mixins";
 @import "./components/sidebar";
 @import "./components/topbar";
-@import "./components/main";
 @import "./components/main__general-statistics";
 @import "./components/main__links";

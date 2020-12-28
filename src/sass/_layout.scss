@@ -1,0 +1,29 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: $color-grey-disabled;
+  font-family: $font-text;
+}
+
+.admin-panel--grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 22vh repeat(6, 1fr);
+  grid-template-rows: 60px 40vh 1fr;
+}
+
+#sidebar {
+  grid-row-start: 1;
+  grid-row-end: -1;
+}
+
+#topbar {
+  grid-column-start: 2;
+  grid-column-end: 8;
+}
+#main {
+  grid-area: 2 / 2 / 4 / 8;
+}
