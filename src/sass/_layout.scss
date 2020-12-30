@@ -7,23 +7,74 @@ body, html {
   font-family: $font-text;
 }
 
-.admin-panel--grid {
+nav.topbar {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  height: 60px;
   width: 100%;
+  background: $color-light;
+  color: $color-grey;
+
+  ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+
+      img {
+        margin: 3px;
+        height: 20px;
+        width: 20px;
+      }
+
+      h2 {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.sidebar {
   height: 100%;
-  display: grid;
-  grid-template-columns: 22vh repeat(6, 1fr);
-  grid-template-rows: 60px 40vh 1fr;
+  width: 180px;
+  min-width: 120px;
+  position: fixed;
+  left: 0;
+  background: $color-dark;
+  color: $color-light;
+
+  &__menu-links {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+
+    a {
+      display: flex;
+      flex-direction: row;
+
+      img {
+        margin: 3px;
+        height: 20px;
+        width: 20px;
+      }
+
+      p {
+        margin: 3px;
+      }
+    }
+  }
 }
 
-#sidebar {
-  grid-row-start: 1;
-  grid-row-end: -1;
-}
-
-#topbar {
-  grid-column-start: 2;
-  grid-column-end: 8;
-}
-#main {
-  grid-area: 2 / 2 / 4 / 8;
+.main {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  left: 200px;
 }
