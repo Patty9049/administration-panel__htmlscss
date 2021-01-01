@@ -1,0 +1,36 @@
+.main__g-stats__stats {
+  border-bottom: solid 1px;
+  border-color: $color-grey-hover;
+  display: flex;
+  justify-content: center;
+
+  .h3 {
+    border-bottom: solid 1px;
+    border-color: $color-grey-hover;
+  }
+
+  .column {
+    margin: 20px 0;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+
+    > div {
+      margin: 10px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: solid 1px;
+      border-color: $color-grey-hover;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  img {
+    margin: 3px;
+    height: 200px;
+    width: 200px;
+  }
+}

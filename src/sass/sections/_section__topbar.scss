@@ -1,3 +1,11 @@
-.topbar img {
-  color: $color-grey;
+.topbar-wrapper {
+
+  > section {
+    border-left: solid 1px;
+    border-color: $color-grey-disabled;
+
+    img {
+      margin: 0 8px;
+    }
+  }
 }

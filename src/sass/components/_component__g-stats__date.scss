@@ -1,5 +1,8 @@
 .main__g-stats__date {
-  background: $color-blue;
+  border-bottom: solid 1px;
+  border-color: $color-grey-hover;
+  display: flex;
+  justify-content: center;
 
   img {
     margin: 3px;
