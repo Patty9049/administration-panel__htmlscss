@@ -2,8 +2,8 @@
 @import "./mixins";
 @import "./normalize";
 @import "./layout";
-@import "./components/sidebar";
-@import "./components/topbar";
-@import "./components/main__general-statistics";
-@import "./components/main__links";
-@import "./sections/sections";
+@import "./sections/section__topbar";
+@import "./sections/section__sidebar-justdoit";
+@import "./sections/section-main__g-stats";
+@import "./sections/section-main__links";
+@import "./components/component__g-stats__date";
