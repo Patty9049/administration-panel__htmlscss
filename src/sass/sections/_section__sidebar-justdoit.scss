@@ -40,4 +40,11 @@
       background: $color-light;
     }
   }
+
+  .ham:hover {
+
+    > div {
+      background: $color-warning-hover;
+    }
+  }
 }
