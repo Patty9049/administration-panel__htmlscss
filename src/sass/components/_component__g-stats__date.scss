@@ -26,7 +26,8 @@
     }
 
     a {
-      width: 36px;
+      margin-left: 20px;
+      width: 40px;
       background-color: $color-warning;
       color: $color-light;
       border-radius: $radius;
@@ -39,6 +40,10 @@
         width: 20px;
 
       }
+    }
+
+    a:hover {
+      background: $color-warning-hover;
     }
   }
 

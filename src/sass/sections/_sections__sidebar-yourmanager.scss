@@ -11,4 +11,10 @@
       margin: 10px;
     }
   }
+
+  a:hover {
+    background: $color-grey-hover;
+    border-left: solid 3px;
+    border-color: $color-warning-hover;
+  }
 }

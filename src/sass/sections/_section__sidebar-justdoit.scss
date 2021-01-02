@@ -9,12 +9,21 @@
 
   &-links {
     li {
-      margin: 15px;
+      padding: 10px;
+    }
+
+    li:hover {
+      background: $color-grey-hover;
+      border-left: solid 3px;
+      border-color: $color-warning-hover;
     }
 
     a {
       text-decoration: none;
       color: $color-light;
+      p {
+        padding: 5px;
+      }
     }
   }
 

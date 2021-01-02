@@ -11,10 +11,12 @@
   .btn-wrapper {
     width: 100%;
     justify-content: space-around;
+
     .button {
       border-radius: $radius;
       padding: 10px;
       background: $color-grey-disabled;
+
       div {
         margin: 4px;
         width: 10px;
@@ -32,13 +34,21 @@
       background: $color-warning;
     }
 
-    div:nth-of-type(3) div {
-      background: $color-green;
+    div:nth-of-type(3) {
+      background: $color-light;
+
+      div {
+        background: $color-green;
+      }
+
+      p {
+        color: $color-blue;
+      }
     }
   }
 
   img {
-    height: 300px;
+    height: 100%;
     width: 100%;
   }
 }

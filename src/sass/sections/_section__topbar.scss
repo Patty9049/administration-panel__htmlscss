@@ -4,6 +4,10 @@
     border-color: $color-grey-disabled;
   }
 
+  > section:hover {
+    background: $color-grey-disabled;
+  }
+
   .cash {
     width: 150px;
     display: flex;
