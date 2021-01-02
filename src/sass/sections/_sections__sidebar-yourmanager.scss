@@ -1,4 +1,14 @@
-.chat__wrapper a {
+.chat__wrapper {
+  margin: 15px;
+
+  a {
+    display: flex;
+    justify-content: flex-start;
     text-decoration: none;
     color: $color-light;
+
+    img {
+      margin: 10px;
+    }
+  }
 }

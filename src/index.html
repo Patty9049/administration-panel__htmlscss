@@ -10,13 +10,13 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="administration-panel__layout">
   <!-- Top Menu -->
   <nav class="topbar">
     <div class="topbar-wrapper">
       <section class="cash">
         <img src="./vendor/solo-project-1/solo-project-1/icons/wallet.svg" alt="wallet">
-        <h3> $1,500.00 </h3>
+        <h4> $1,500.00 </h4>
         <img src="./vendor/solo-project-1/solo-project-1/icons/arrow-down-small.svg" alt="arrowdown">
       </section>
       <section class="notification">
@@ -91,9 +91,9 @@
         </ul>
       </section>
       <section class="chat__wrapper">
-        <h3>YOUR MANAGER</h3>
+        <h4>YOUR MANAGER</h4>
         <a href="#">
-          <img src="./" alt="Manager">
+          <img src="./">
           <p>M.M.</p>
         </a>
       </section>
@@ -105,10 +105,15 @@
     <section class="main__g-stats">
       <h3>GENERAL STATISTIC</h3>
       <div class="main__g-stats__date">
-        <input type="text">
-        <input type="date">
-        <img src="./vendor/solo-project-1/solo-project-1/icons/refresh.svg" alt="postback">
-        <a href="#"></a>
+        <div class="main__g-stats__date__wrapper">
+          <div class="date-input__wrapper">
+            <input type="text">
+            <input type="date">
+          </div>
+          <a href="#">
+            <img src="./vendor/solo-project-1/solo-project-1/icons/refresh.svg" alt="postback">
+          </a>
+        </div>
       </div>
       <div class="main__g-stats__stats">
         <div class="column">
@@ -135,9 +140,18 @@
       <div class="main__g-stats__chart">
         <h4>Earnings chart</h4>
         <div class="btn-wrapper">
-          <button>Signups</button>
-          <button>FTD</button>
-          <button>Earned</button>
+          <div class="button">
+            <div></div>
+            <p> Signups </p>
+          </div>
+          <div class="button">
+            <div></div>
+            <p> FTD </p>
+          </div>
+          <div class="button">
+            <div></div>
+            <p> Earned </p>
+          </div>
         </div>
         <img src="#" alt="CHART">
       </div>

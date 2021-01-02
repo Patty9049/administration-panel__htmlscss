@@ -5,6 +5,11 @@ body, html {
   height: 100%;
   background: $color-grey-disabled;
   font-family: $font-text;
+  font-size: $base-size;
+  
+  button, input, optgroup, select, textarea {
+    padding: 8px;
+  }
 }
 
 .topbar {

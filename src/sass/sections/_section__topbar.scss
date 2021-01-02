@@ -1,11 +1,39 @@
 .topbar-wrapper {
-
   > section {
     border-left: solid 1px;
     border-color: $color-grey-disabled;
+  }
 
-    img {
-      margin: 0 8px;
+  .cash {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+
+    img:last-of-type {
+      height: 10px;
+      width: 10px;
     }
+
+    h4 {
+      margin-top: 5px;
+      font-size: 18px;
+    }
+  }
+
+  img {
+    margin: 10px 10px 0 10px;
+  }
+
+  a {
+    margin-top: 5px;
+    color: $color-blue;
+    font-size: $base-size;
+    text-decoration: none;
+  }
+
+  .profile {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
   }
 }

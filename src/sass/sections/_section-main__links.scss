@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
+
     > div {
       display: flex;
     }
@@ -23,6 +24,7 @@
   }
 
   h3 {
+    padding: 15px;
     border-bottom: solid 1px;
     border-color: $color-grey-hover;
   }

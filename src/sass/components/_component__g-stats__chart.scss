@@ -11,6 +11,30 @@
   .btn-wrapper {
     width: 100%;
     justify-content: space-around;
+    .button {
+      border-radius: $radius;
+      padding: 10px;
+      background: $color-grey-disabled;
+      div {
+        margin: 4px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: $color-blue;
+      }
+
+      p {
+        margin: 4px;
+      }
+    }
+
+    div:nth-of-type(2) div {
+      background: $color-warning;
+    }
+
+    div:nth-of-type(3) div {
+      background: $color-green;
+    }
   }
 
   img {
