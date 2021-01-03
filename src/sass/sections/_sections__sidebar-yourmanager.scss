@@ -9,6 +9,19 @@
 
     img {
       margin: 10px;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+    }
+
+    .dot {
+      background: $color-green;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      position: relative;
+      left: 15px;
+      top: 10px;
     }
   }
 

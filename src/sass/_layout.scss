@@ -185,70 +185,99 @@ body, html {
   }
 }
 
-@media(max-width: 767px) {
-  @include grid('sm');
-  .sidebar {
-    width: 30px;
-    min-width: 20px;
-  }
+// @media(max-width: 767px) {
+//   @include grid('sm');
+//   .sidebar {
+//     width: 30px;
+//     min-width: 20px;
+//   }
 
-  section.sidebar__menu {
-    border: none;
-    margin-left: 5px;
-  }
-  .sidebar__wrapper {
-    width: 10%;
-    min-width: 20px;
-    height: 100%;
+//   section.sidebar__menu {
+//     border: none;
+//     margin-left: 5px;
+//   }
+//   .sidebar__wrapper {
+//     width: 10%;
+//     min-width: 20px;
+//     height: 100%;
 
-    header h2 {
-      display: none;
-    }
+//     header h2 {
+//       display: none;
+//     }
 
-    .sidebar__menu-links {
-      display: none;
-    }
+//     .sidebar__menu-links {
+//       display: none;
+//     }
 
-    .chat__wrapper {
-      width: 20px;
-      margin: 4px;
+//     .chat__wrapper {
+//       width: 20px;
+//       margin: 4px;
 
-      h4, p {
-        display: none;
-      }
+//       h4, p {
+//         display: none;
+//       }
 
-      .manager-img {
-        margin: 0;
-      }
-    }
-  }
-  nav.topbar {
-    display: none;
-  }
+//       .manager-img {
+//         margin: 0;
+//       }
+//     }
+//   }
 
-  .sidebar__sm-menu {
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+//   nav.topbar {
+//     display: none;
+//   }
 
-    img, svg {
-      margin: 10px 5px;
-      width: 20px;
-      height: 20px;
-    }
-  }
-}
+//   .sidebar__sm-menu {
+//     height: 80%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-end;
 
-@media(min-width: 768px) {
-  @include grid('md');
-}
+//     img, svg {
+//       margin: 10px 5px;
+//       width: 20px;
+//       height: 20px;
+//     }
+//   }
 
-@media(min-width: 992px) {
-  @include grid('lg');
-}
+//   .main {
+//     top: 0;
+//     left: 35px;
+//   }
 
-@media(min-width: 1200px) {
-  @include grid('xl');
+//   .main__g-stats {
+//     margin-left: 0 5px 0 0;
+//   }
 
-}
+//   .date-input__wrapper {
+//     display: flex;
+//     flex-direction: column;
+
+//     input {
+//       border: solid 4px;
+//       border-color: yellow;
+//     }
+//   }
+
+//   .main__g-stats__date__wrapper {
+//     display: flex;
+//     flex-direction: column;
+//   }
+//   // section {
+//   //   display: flex;
+//   //   flex-direction: column;
+//   // }
+// }
+
+// @media(min-width: 768px) {
+//   @include grid('md');
+// }
+
+// @media(min-width: 992px) {
+//   @include grid('lg');
+// }
+
+// @media(min-width: 1200px) {
+//   @include grid('xl');
+
+// }

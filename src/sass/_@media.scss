@@ -1,0 +1,150 @@
+@media(max-width: 430px) {
+  @include grid('xsm');
+  .date-input__wrapper {
+    a {
+      width: 40px;
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  @include grid('sm');
+  .sidebar {
+    width: 30px;
+    min-width: 20px;
+  }
+
+  section.sidebar__menu {
+    border: none;
+    margin-left: 5px;
+  }
+  .sidebar__wrapper {
+    width: 10%;
+    min-width: 20px;
+    height: 100%;
+
+    header h2 {
+      display: none;
+    }
+
+    // .sidebar__menu-links {
+    //   display: none;
+    // }
+
+    .chat__wrapper {
+      width: 20px;
+      margin: 4px;
+
+      h4, p {
+        display: none;
+      }
+
+      .manager-img {
+        margin: 0;
+        width: 20px;
+        height: 20px;
+      }
+
+      .dot {
+        position: absolute;
+        top: 35px;
+        left: 5px;
+      }
+    }
+  }
+
+  nav.topbar {
+    display: none;
+  }
+
+  .sidebar__sm-menu {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    img, svg {
+      margin: 10px 5px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .main {
+    top: 0;
+    left: 35px;
+  }
+
+  .main__g-stats {
+    margin-left: 0 5px 0 0;
+  }
+
+  .main__g-stats__date__wrapper a{
+      width: 100%;
+      margin: 0;
+  }
+
+  .date-input__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__g-stats__date__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__g-stats__stats {
+    flex-direction: column;
+
+    .column {
+      width: 100%;
+    }
+  }
+
+  .main__g-stats__chart .btn-wrapper {
+    flex-direction: column;
+
+    .button {
+      margin-top: 5px;
+    }
+  }
+  .main__links__wrapper {
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+
+    > div {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  ul.sidebar__menu-links {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    background: grey;
+  }
+
+  // ul.sidebar__menu-links:hover {
+  //   li {
+  //     background: $color-grey-hover;
+  //     border-left: solid 3px;
+  //     border-color: $color-warning-hover;
+  //   }
+  // }
+}
+
+@media(min-width: 768px) {
+  @include grid('md');
+}
+
+@media(min-width: 992px) {
+  @include grid('lg');
+}
+
+@media(min-width: 1200px) {
+  @include grid('xl');
+
+}
