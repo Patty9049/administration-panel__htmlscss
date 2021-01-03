@@ -1,3 +1,4 @@
+/* general */
 body, html {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@ body, html {
   background: $color-grey-disabled;
   font-family: $font-text;
   font-size: $base-size;
-  
+
   button, input, optgroup, select, textarea {
     padding: 8px;
   }
@@ -18,6 +19,7 @@ body, html {
 
 .topbar {
   position: fixed;
+  left: 0;
   display: flex;
   justify-content: flex-end;
   height: 60px;
@@ -51,7 +53,7 @@ body, html {
 
 .sidebar {
   height: 100%;
-  width: 180px;
+  width: 160px;
   min-width: 120px;
   position: fixed;
   left: 0;
@@ -81,9 +83,172 @@ body, html {
   }
 }
 
+.sidebar__sm-menu {
+  display: none;
+}
+
 .main {
   position: fixed;
   top: 60px;
   right: 0;
-  left: 200px;
+  left: 180px;
+}
+/* grid */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-sm-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
+
+.col-sm-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
+
+.col-sm-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-sm-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+.col-sm-5 {
+  flex: 0 0 41.667%;
+  max-width: 41.667%;
+}
+
+.col-sm-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-sm-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+}
+
+.col-sm-8 {
+  flex: 0 0 66.667%;
+  max-width: 66.667%;
+}
+
+.col-sm-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.col-sm-10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+}
+
+.col-sm-11 {
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%;
+}
+
+.col-sm-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@for $i from 1 through 12 {
+  .col-sm-#{$i} {
+    $width: 100% / 12 * $i;
+    flex: 0 0 $width;
+    max-width: $width;
+  }
+}
+
+@media(max-width: 767px) {
+  @include grid('sm');
+  .sidebar {
+    width: 30px;
+    min-width: 20px;
+  }
+
+  section.sidebar__menu {
+    border: none;
+    margin-left: 5px;
+  }
+  .sidebar__wrapper {
+    width: 10%;
+    min-width: 20px;
+    height: 100%;
+
+    header h2 {
+      display: none;
+    }
+
+    .sidebar__menu-links {
+      display: none;
+    }
+
+    .chat__wrapper {
+      width: 20px;
+      margin: 4px;
+
+      h4, p {
+        display: none;
+      }
+
+      .manager-img {
+        margin: 0;
+      }
+    }
+  }
+  nav.topbar {
+    display: none;
+  }
+
+  .sidebar__sm-menu {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    img, svg {
+      margin: 10px 5px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  @include grid('md');
+}
+
+@media(min-width: 992px) {
+  @include grid('lg');
+}
+
+@media(min-width: 1200px) {
+  @include grid('xl');
+
 }

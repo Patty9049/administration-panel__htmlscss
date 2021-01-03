@@ -4,7 +4,6 @@
     "engines": {
         "node": "12.x"
     },
-    "description": "",
     "main": "index.html",
     "scripts": {
         "init-project": "npm install && npm-run-all init:*",
@@ -48,5 +47,14 @@
         "onchange": "^5.2.0",
         "stylelint": "^9.10.1",
         "stylelint-scss": "^3.5.4"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Patty9049/administration-panel__vanillajs.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Patty9049/administration-panel__vanillajs/issues"
+    },
+    "homepage": "https://github.com/Patty9049/administration-panel__vanillajs#readme",
+    "description": ""
 }
