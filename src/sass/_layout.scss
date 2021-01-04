@@ -17,6 +17,7 @@ body, html {
   display: none;
 }
 
+/* topbar */
 .topbar {
   position: fixed;
   left: 0;
@@ -51,6 +52,7 @@ body, html {
   }
 }
 
+/* sidebr */
 .sidebar {
   height: 100%;
   width: 160px;
@@ -87,12 +89,14 @@ body, html {
   display: none;
 }
 
+/* main */
 .main {
   position: fixed;
   top: 60px;
   right: 0;
   left: 180px;
 }
+
 /* grid */
 * {
   box-sizing: border-box;
@@ -185,99 +189,16 @@ body, html {
   }
 }
 
-// @media(max-width: 767px) {
-//   @include grid('sm');
-//   .sidebar {
-//     width: 30px;
-//     min-width: 20px;
-//   }
+/* scroll-wrapper */
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  overflow-x: auto;
+  overflow-y: scroll;
+}
 
-//   section.sidebar__menu {
-//     border: none;
-//     margin-left: 5px;
-//   }
-//   .sidebar__wrapper {
-//     width: 10%;
-//     min-width: 20px;
-//     height: 100%;
-
-//     header h2 {
-//       display: none;
-//     }
-
-//     .sidebar__menu-links {
-//       display: none;
-//     }
-
-//     .chat__wrapper {
-//       width: 20px;
-//       margin: 4px;
-
-//       h4, p {
-//         display: none;
-//       }
-
-//       .manager-img {
-//         margin: 0;
-//       }
-//     }
-//   }
-
-//   nav.topbar {
-//     display: none;
-//   }
-
-//   .sidebar__sm-menu {
-//     height: 80%;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-end;
-
-//     img, svg {
-//       margin: 10px 5px;
-//       width: 20px;
-//       height: 20px;
-//     }
-//   }
-
-//   .main {
-//     top: 0;
-//     left: 35px;
-//   }
-
-//   .main__g-stats {
-//     margin-left: 0 5px 0 0;
-//   }
-
-//   .date-input__wrapper {
-//     display: flex;
-//     flex-direction: column;
-
-//     input {
-//       border: solid 4px;
-//       border-color: yellow;
-//     }
-//   }
-
-//   .main__g-stats__date__wrapper {
-//     display: flex;
-//     flex-direction: column;
-//   }
-//   // section {
-//   //   display: flex;
-//   //   flex-direction: column;
-//   // }
-// }
-
-// @media(min-width: 768px) {
-//   @include grid('md');
-// }
-
-// @media(min-width: 992px) {
-//   @include grid('lg');
-// }
-
-// @media(min-width: 1200px) {
-//   @include grid('xl');
-
-// }
+.scroll-wrapper table {
+  width: 100%;
+  max-width: 100%;
+}

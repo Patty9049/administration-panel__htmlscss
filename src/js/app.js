@@ -13,15 +13,15 @@ const app = {
     thisApp.menuHeader = document.querySelector(select.sidebar.menuHeader);
     console.log('header', thisApp.menuHeader);
 
-    const showAndHide = [];
-    showAndHide.push(thisApp.menuHeader);
-    showAndHide.push(thisApp.menu);
-    console.log('SH', showAndHide);
-
+    const respons = window.matchMedia('(max-width: 480px)');
 
     thisApp.hamburgerIcon.addEventListener('click', ((e)=>{
       e.preventDefault();
-      thisApp.menu.classList.toggle(select.class.hide);
+      if (thisApp.menu.style.display === 'none') {
+        thisApp.menu.style.display = 'block';
+      } else {
+        thisApp.menu.style.display = 'none';
+      }
     }));
   },
 };

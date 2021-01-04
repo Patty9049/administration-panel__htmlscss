@@ -1,5 +1,6 @@
 @media(max-width: 430px) {
   @include grid('xsm');
+  
   .date-input__wrapper {
     a {
       width: 40px;
@@ -9,6 +10,7 @@
 
 @media(max-width: 767px) {
   @include grid('sm');
+
   .sidebar {
     width: 30px;
     min-width: 20px;
@@ -18,6 +20,7 @@
     border: none;
     margin-left: 5px;
   }
+
   .sidebar__wrapper {
     width: 10%;
     min-width: 20px;
@@ -80,8 +83,8 @@
   }
 
   .main__g-stats__date__wrapper a{
-      width: 100%;
-      margin: 0;
+    width: 100%;
+    margin: 0;
   }
 
   .date-input__wrapper {
@@ -109,6 +112,7 @@
       margin-top: 5px;
     }
   }
+
   .main__links__wrapper {
     margin: 0;
     width: 100%;
@@ -121,19 +125,12 @@
   }
 
   ul.sidebar__menu-links {
+    display: none;
     position: absolute;
     top: 0;
     left: 30px;
     background: grey;
   }
-
-  // ul.sidebar__menu-links:hover {
-  //   li {
-  //     background: $color-grey-hover;
-  //     border-left: solid 3px;
-  //     border-color: $color-warning-hover;
-  //   }
-  // }
 }
 
 @media(min-width: 768px) {
