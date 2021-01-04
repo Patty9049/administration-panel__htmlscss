@@ -5,15 +5,8 @@ const app = {
     const thisApp = this;
 
     thisApp.hamburgerIcon = document.querySelector(select.sidebar.hamburgerMenuIcon);
-    console.log('hamburger', thisApp.hamburgerIcon);
-
     thisApp.menu = document.querySelector(select.sidebar.menuLinks);
-    console.log('menu', thisApp.menu);
-
-    thisApp.menuHeader = document.querySelector(select.sidebar.menuHeader);
-    console.log('header', thisApp.menuHeader);
-
-    const respons = window.matchMedia('(max-width: 480px)');
+    console.log('where is source map?');
 
     thisApp.hamburgerIcon.addEventListener('click', ((e)=>{
       e.preventDefault();
