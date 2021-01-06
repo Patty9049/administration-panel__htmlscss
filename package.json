@@ -51,11 +51,11 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Patty9049/administration-panel__vanillajs.git"
+        "url": "git+https://github.com/Patty9049/administration-panel__htmlscss.git"
     },
     "bugs": {
-        "url": "https://github.com/Patty9049/administration-panel__vanillajs/issues"
+        "url": "https://github.com/Patty9049/administration-panel__htmlscss/issues"
     },
-    "homepage": "https://github.com/Patty9049/administration-panel__vanillajs#readme",
+    "homepage": "https://github.com/Patty9049/administration-panel__htmlscss#readme",
     "description": ""
 }
